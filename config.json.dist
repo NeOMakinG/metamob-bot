@@ -1,4 +1,8 @@
 {
-  "BOT_TOKEN": "YOUR BOT TOKEN",
-  "METAMOB_API_KEY": "YOUR METAMOB API KEY"
+    "BOT_TOKEN": "YOUR BOT TOKEN",
+    "METAMOB_API_KEY": "YOUR METAMOB API KEY",
+    "DATABASE_HOST": "localhost",
+    "DATABASE_USER": "root",
+    "DATABASE_PASSWORD": "",
+    "DATABASE_BASE": "metamob_bot"
 }
