@@ -62,13 +62,14 @@ client.on("message", async function(message) {
                 }
                 const metamob_pseudo = results[0]['metamob_pseudo'];
                 //api call
-                let fetch_result = fetch(config.METAMOB_API_BASE_URL+'utilisateurs/'+metamob_pseudo,
+                const fetch_result = await fetch(config.METAMOB_API_BASE_URL+'utilisateurs/'+metamob_pseudo,
                     {
                     headers: {'Content-Type': 'application/json', 'HTTP-X-APIKEY': config.METAMOB_API_KEY},
                 })
-                    .then(res => res.json())
-                    .then(resolve(fetch_result));
-                await console.log(fetch_result);
+
+                let result = await fetch_result.json();
+                
+              console.log(result);
                 // await message.reply(`Ton pseudo est ${metamob_pseudo}.`);
             });
     }
