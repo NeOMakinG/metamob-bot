@@ -17,8 +17,8 @@ Use `npm index.js` to start the bot.
 This bot can be used through different commands. First you need to tell him what is your Metamob URL by using this 
 command:
 
-`!mbot pseudo Garfunk` where "Garfunk" is your Metamob name.
+`!!pseudo Garfunk` where "Garfunk" is your Metamob name.
 
 You can then use this command to get your information from the API:
 
-`!mbot page`
+`!!page`
